@@ -67,12 +67,11 @@ section .content p {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 150%;
-
     color: var(--paragraph)
 }
 img {
     max-width: 100%;
-    
+    border-radius: 1rem;
 }
 .button {
     background: var(--primary-color);
@@ -244,19 +243,13 @@ body.menu-expanded button path {
 #home .button {
     margin-inline: auto;
 }
-#home p {
-    font-size: 1.8rem;
-    line-height: 150%;
-    font-weight: 400;
-    color: var(--paragraph);
-    margin-bottom: 3.2rem;
-}
 #home img {
     width: 26.4rem;
-    margin-top: 50px;
     display: block;
     margin-inline: auto;
-    object-position: 0 2rem;
+    margin-top: 5px;
+    border-radius: 1rem;
+
 }
 #home .stats {
     width: 100%;
@@ -279,13 +272,23 @@ body.menu-expanded button path {
     margin-bottom: 0.4rem;
     
 }
+#home h4 {
+    margin-top: 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 5.7rem;
+    text-transform: initial;
+}
 #home .stat p {
     margin: 0;
     color: var(--brand-light);
     font-size: 1.6rem;
     line-height: 150%;
-
 }
+#home h1 {
+    margin-top: 50px;
+    margin-bottom: 75px;
+}
+
 
 /*SERVICES*/
 
@@ -316,7 +319,6 @@ body.menu-expanded button path {
 }
 #about header h2 {
     margin-bottom: 2.4rem;
-
 }
 #about .content p {
     margin-top: 2.4rem;
@@ -333,6 +335,7 @@ body.menu-expanded button path {
 }
 #contact header h2 {
     margin-bottom: 2.4rem;
+    
 }
 #contact ul {
     display: flex;
@@ -552,7 +555,8 @@ nav#navigation.scroll .menu a.button:hover {
     grid-area: B;
 }
 #home h1 {
-    font-size: 5.2rem;
+    font-size: 3.5rem;
+    font-weight: 100;
 }
 #home .content p {
     font-size: 1.8rem;
@@ -609,7 +613,10 @@ nav#navigation.scroll .menu a.button:hover {
 }
 #about .content p {
     margin-bottom: 0;
-
+    text-align: justify;
+}
+#about img {
+    margin-top: 37px;
 }
 
 
@@ -619,10 +626,13 @@ nav#navigation.scroll .menu a.button:hover {
 #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
     grid-template-areas: 'A B';
-  }
-  #contact h2 {
+}
+#contact h2 {
     width: 40.4rem;
-  }
+}
+#contact .col-a {
+    margin-top: 40px; /*arrumar a foto*/
+}
 
 
 /*FOOTER*/
@@ -646,5 +656,6 @@ footer p {
     margin-bottom: 0;
     color: var(--brand-light2);
 }
+
 
 }
