@@ -501,7 +501,7 @@ nav#navigation .menu li a::after{
     height: 2px;
     background-color: var(--primary-color);
 
-    position: relative;
+    position: flex;
     bottom: -2rem;
     left: -0.5rem;
 
